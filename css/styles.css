@@ -45,7 +45,7 @@ a:visited{
     background-size: cover;
     text-align: center;
     position: relative;
-
+    background: rgba(0,0,0, .25);
 }
 #banner header {
     padding: 2rem 0;
@@ -75,14 +75,18 @@ a:visited{
     font-size: 1.25rem;
 }
 .content{
-   padding: 7.5rem 0 6rem 0;
+    padding: 7.5rem 0 6rem 0;
     margin: auto;
+}
+.projects_content {
+    padding: 7.5rem 0 6rem 0;
+
 }
 .content .title, .sub_title{
     color: #fff;
     text-align: center;
 }
-.content .title {
+.content .title, .projects_content .title{
     font-size: 6rem;
 }
 .content .sub_title{
@@ -95,19 +99,20 @@ a:visited{
 #arrow{
     margin-top: 12.5rem;
     padding-bottom: 1.5rem;
+    color: whiter;
 }
 #arrow {
   -webkit-animation-duration: 3.5s;
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count:infinite;
 }.banner_content{
-   padding: 7.5rem 0 6rem 0;
+   padding: 5rem 0 6rem 0;
     margin: auto;
     margin-top: 7.5rem;
     padding-bottom: 0;
 }
 .blink {
-    padding-top: 1.5px;
+    padding-top: 2px;
     padding-left: 2px;
     display: none;
     -webkit-animation-name: blinker;
@@ -198,9 +203,10 @@ title_2{
             Services Content
 ======================================*/
 
-#services .content h1{
+#services .projects_content h1{
     color: #373a3c;
 }
+
 #services h2{
     color: #373a3c;
 }
@@ -218,9 +224,18 @@ title_2{
     max-width: 100%;
 }
 
+.language_logo {
+    margin: auto;
+}
+
 .ios-app {
   max-width: 25%;
   height: auto;
+}
+
+.ios-text {
+  float: right;
+  display: block;
 }
 /*======================================
             Footer
