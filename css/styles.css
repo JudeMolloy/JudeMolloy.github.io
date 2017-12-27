@@ -72,6 +72,11 @@ a:visited{
     margin-left: 1.75rem;
     font-size: 1.25rem;
 }
+
+#banner {
+    background-size: 15em, 15em, auto, cover;
+}
+
 .content{
     padding: 7.5rem 0 6rem 0;
     margin: auto;
@@ -103,11 +108,12 @@ a:visited{
   -webkit-animation-duration: 3.5s;
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count:infinite;
-}.banner_content{
-   padding: 6rem 0 6rem 0;
-    margin: auto;
-    margin-top: 4.75rem;
-    padding-bottom: 0;
+}
+.banner_content{
+    /*
+    Change padding below to alter background at top of page size.
+    */
+   padding: 10rem 0 6rem 0;
 }
 .blink {
     padding-top: 2px;
