@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Create Development</title>
+    <title>Jude Molloy</title>
 
     <!--============================
               CSS
@@ -11,9 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/hover.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animations.css">
+    <!--[if lte IE 9]>
+      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -33,6 +36,7 @@
                 <nav>
                     <a class="hvr-underline-from-left" href="#">Home</a>
                     <a class="hvr-underline-from-left" href="#">Projects</a>
+                    <a class="hvr-underline-from-left" href="#">Tutorials</a>
                     <a class="hvr-underline-from-left" href="#services">Contact</a>
                     <a class="hvr-underline-from-left" href="#">More</a>
                 </nav>
@@ -55,9 +59,9 @@
    ============================-->
     <section id="our_work">
         <div class="wrapper">
-           <div class="content">
-                <h1 class="title">Recent Projects</h1>
-                <h2 class="sub_title">Some of our most recent work.</h2>
+           <div class="content animatedParent" data-appear-top-offset='-300'>
+                <h1 class="title animated bounceInDown">Recent Projects</h1>
+                <h2 class="sub_title animated rotateInDownRight">Some of my most recent projects.</h2>
                 <hr>
                 <!--       Portfolio 1             -->
                 <div class="row">
@@ -83,24 +87,70 @@
   <section id="services_banner" data-parallax="scroll" data-image-src="img/code.jpg">
       <div class="wrapper">
              <div class="content">
-              <h1 class="title">Which Languages Do I Use?</h1>
+              <h1 class="title">Which <span class="green_text">Languages</span> Do I Use?</h1>
       </div>
   </section>
 <!--  Services Content  -->
+
     <section id="services">
         <div class="wrapper">
             <div class="projects_content">
-                <img src="img/python-logo.svg" class=l"anguage_logo">
-                
+
+                <img src="img/python-logo.svg" class="wow slideInLeft language_logo" data-wow-offset="25" data-wow-duration="1.5s">
+                <p class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Python is my <span>main</span> multi-purpose programming language. I use it for <span>nearly</span> everything from programming challenges to the odd machine learning algorithm.</p>
+                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Python Programming Snippet</b></p>
+                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/ff1bf5fa0a7eb88b7aeb15b4d7188da1.js"></script></div>
+                <hr>
+
+                <img src="img/django.png" class="wow slideInLeft django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">
+                <p class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Django is a Python <span>Framework</span> that I use to build <span>web applications</span> and server-side Python.</p>
+                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Django Code Snippet</b></p>
+                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/c4abae4363b358bc2e37f2b3f4774369.js"></script></div>
+                <hr>
+
+                <img src="img/swift.png" class="wow slideInLeft swift_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">
+                <p class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Swift is <span>Apple's</span> latest programming language. I use it to build <span>iOS</span> applications for the <span>iPhone</span> and <span>iPad.</span></p>
+                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Swift Programming Snippet</b></p>
+                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/c4abae4363b358bc2e37f2b3f4774369.js"></script></div>
+                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Xcode iOS Development Environment</b></p>
+                <img src="img/xcode.png" class="wow zoomInDown xcode language_logo" data-wow-offset="25" data-wow-duration="1.5s">
+                <hr>
+
                 </div>
             </div>
         </div>
         <div class="languages">
-        <h1 class=" title hvr-grow text-xs-center">Languages & Frameworks</h1>
+        <h1 class="title hvr-grow text-xs-center">Contact</h1>
         </div>
-        <div class="languages col-xs-12">
-                <img src="img/languages.png" class="lang-img center-block hvr-grow">
+        <div class="languages">
+          <div class="container">
+            <form name="contactform" method="post" action="send_form_email.php">
+
+                  <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input class="form-control" type="text" name="first_name" maxlength="50" size="30" placeholder="First Name"> 
+                  </div>
+
+                  <div class="form-group .has-success">
+                    <label for="exampleInputPassword1">Last Name</label>
+                    <input type="text" class="form-control" name="last_name" maxlength="50" size="30" placeholder="Last Name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" type="text" name="email" maxlength="80" size="30" placeholder="Email Address"> 
+                  </div>
+
+                  <div class="form-group">
+                    <label for="comments">Message</label>
+                    <textarea class="form-control" name="comments" maxlength="1000" cols="25" rows="6" placeholder="Enter Your Message"></textarea> 
+                  </div>
+
+                  <input type="submit" value="Submit" class="button"></input>
+                  </form>
+          </div>
         </div>
+
     </section>
     <!--============================
               Footer
@@ -112,7 +162,7 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="copyright-text">
-                            © Create-Dev | All Rights Reserved.
+                            © Jude Molloy | 2017
                         </div>
                     </div>
                     <div class="col-xs-6 text-xs-center">
@@ -125,7 +175,12 @@
                             <a href="#" title="Facebook">
                                 <i class="fa fa-facebook fa-lg hvr-grow"></i>
                             </a>
-
+                            <a href="#" title="LinkedIn">
+                                <i class="fa fa-linkedin fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="Email">
+                                <i class="fa fa-envelope-o  fa-lg hvr-grow"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -135,10 +190,16 @@
     <!--============================
               JavaScript
    ============================-->
+   <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax/parallax.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="/wp-content/themes/kappe/js/css3-animate-it.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
 </body>
 </html>

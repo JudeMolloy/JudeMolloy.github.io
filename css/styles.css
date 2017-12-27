@@ -34,7 +34,7 @@ a:visited{
 #banner nav a:hover{
     color: #fff;
 }
-.button_wrapper .button:hover{
+.button:hover{
     background-color: #00ff7f;
 }
 
@@ -58,11 +58,9 @@ a:visited{
     margin: 0;
 }
 .title {
-    font-weight: 200
+    font-weight: 200;
 }
-.title span {
-    font-weight: 700;
-}
+
 #banner nav{
     float: right;
 
@@ -106,9 +104,9 @@ a:visited{
   -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count:infinite;
 }.banner_content{
-   padding: 5rem 0 6rem 0;
+   padding: 6rem 0 6rem 0;
     margin: auto;
-    margin-top: 7.5rem;
+    margin-top: 4.75rem;
     padding-bottom: 0;
 }
 .blink {
@@ -203,21 +201,33 @@ title_2{
             Services Content
 ======================================*/
 
+.green_text {
+    color: #3ac569;
+}
 #services .projects_content h1{
     color: #373a3c;
 }
-
 #services h2{
     color: #373a3c;
 }
 .languages{
     background-color: #383A3F;
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 .languages .title{
     color: #fff;
     text-align: center;
     margin-bottom: 1rem;
+    display: block;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+.languages form {
+    color: #fff;
+
+}
+.languages .button {
+    margin: auto;
     display: block;
 }
 .lang-img{
@@ -225,9 +235,16 @@ title_2{
 }
 
 .language_logo {
+    display: block;
     margin: auto;
 }
-
+.language_text {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.language_text span {
+    color: #3ac569;
+}
 .ios-app {
   max-width: 25%;
   height: auto;
@@ -236,6 +253,23 @@ title_2{
 .ios-text {
   float: right;
   display: block;
+}
+.swift_logo {
+    width: 35%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+}
+.django_logo {
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+.code-snippet {
+    padding-bottom: 3rem;
+}
+.xcode {
+    max-width: 75%;
+    padding-bottom: 3rem;
 }
 /*======================================
             Footer
