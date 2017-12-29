@@ -137,6 +137,10 @@ a:visited{
   to { opacity: 0.0; }
 }
 
+.sub_title span {
+    color: #3ac569;
+}
+
 /*======================================
             Button
 ======================================*/
@@ -206,6 +210,10 @@ title_2{
 /*======================================
             Services Content
 ======================================*/
+
+#services {
+    background-color: #F8FAFF;
+}
 
 .green_text {
     color: #3ac569;
