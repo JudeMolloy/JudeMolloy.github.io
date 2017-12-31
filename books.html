@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jude Molloy | Savagemash</title>
+
+    <!--============================
+              CSS
+   ============================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animations.css">
+    <!--[if lte IE 9]>
+      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+
+<!--
+
+                  `ooooooooooooossssoooooo++o++++++++//o`                        
+                                     .NmmmmNmmmmdNmddhhhhhdddmNNmddddddd++N`                        
+                                     .NmmmmNNNNmmhhhhhdhhhhhhhhhhdmmdddd++N`                        
+                                     .NmNNNNmmmdhhhhhhhhhhhhhhhhhhsydmmd++N`                        
+                                `````-MNNmmmmNmmhhhhhhhhhyhhhhhhhhdysshmy+N`                        
+                                ymdddNNmmmmmmmNmdhhhhhhhhhhyyhhhhhhhysssddM`                        
+                                hMmmNNmmmmmmmmmmmmddhhhhhhhhhyyyhhhhhysssdM`                        
+                                hMNNNmNmmmmmmmmmmmmmdddhhhhhhhhysdhhhyysssM`                        
+                             -somNmmmmNmmmmmmmmmmmmmmmmdddhhhhhhydhhhshsssM`                        
+                             /NNmmmNmmNmmmmmmmmmmmmmmmmmmmddhhhhhhhhhsysshM`                        
+                             /NMmmmmNmmmmmmmdddhyyyyhhddmmmddhhhhhhhyssshmM`                        
+                             /mNNmmmmmmmmmysoo+//::--::+os+:---:/+syssydhoN`                        
+                             /MNmmmmmmmmmy+++/-.........--.........:odmyooM`                        
+                             /Mmmmmmmmmmso++:........................odsssM`                        
+                             /NNmmmmmmmy+++/.........................`+myyM`                        
+                             /MNmmmmmmNo+++:..........................`omyM`                        
+                             /MmmmmmmmNo+++-..........................``ddM`                        
+                             /Nmmmmmmmms+++-...........................`+mm-                        
+                             /Nmmmmmmmoo+++:----.........-/-...........`-Mmy                        
+                             /Mmmmmmmm+++++syssoo+/--.....+/--.........`/myo                        
+                             /MmmmmmmNo+++smdhhhhyyyso++/+oo/-.........`hdyo                        
+                             /NNmmmmmmd+++ysooooosyyhhdddyo:/+/---://+//Nyyo                        
+                             /mNNmmmmmmyyhdddddddmmmmddhyso+oydmdddhhhyysmmy`                       
+                             /mmmhhdNNNmNmmmMMMMMMmo+//+sNdhdmNMMmo///+omysm-                       
+                             /Moso++odmhooymMMMMMMdo+//+sNmh/dMmydo+//+sNhmy`                       
+                             /N+syso++yo+++mNMMMM//MMMMMMMd:.yNdomMMMMMMNNho                        
+                             /Msoosss++++++yNMMMMMMMMMMMMmo..-mMMMMMMMMMNdy+                        
+                              sNs++oys++++++ymNMMMMMMMNNd+....:mNMMMMNNmN`                          
+                              sdmhooos+s+++::/shddddhys+:--.``.+ossss+:Nm`                          
+                              sdhNNhso+h++/....--------s+ddo:/ydy/.....NN`                          
+                              /soysysyNNs++-....-/:...-+ooo++//:-.....smm`                          
+                                     .Nmmo+/-....-/:....-----........omym`                          
+                                     .Ndmmo++:-...:++/:::::/:-......odyym`                          
+                                     .NddNyso++:-..:ooo//++-.......shsssd`                          
+                                     .Nddmmoosso+:-.--://:-......:hyooood`                          
+                                     .NdddNy++ossso/--.........:shsoooood`                          
+                                     .NddNNNo/-:/osso+/:---../sdhooooooos/+                         
+                                     .NmNNNNh/...-/+oosooshhhdmdyoooooooooy                         
+                     +ssssyyyyyyyyyyyhMMNNNdso.....-:++oosNddyhhyossyyyhdhy                         
+                     sdhhhNNmmmNmNNNNNNNNNNNso:......-:/+dmmyyyydhdhddddNdy                         
+                     sdhhhNNmNNNNNNNNNNNNNNNNho:........-ymNmddddhdhddddNdy                         
+                     sdhhhNNNNNNNNNNNNNNNNNNmmmho/::::/+ymmmddNmmddhddddNdy                         
+                     sdhhmMNNNNNmmmmmmmmmmNNNNmmmhs/.+hmmmmmdshdmmmdddddNdy                         
+                     shhNNNNNmmmmmmmmmmmmmmmNNNNmmmmymmmmmmmmddddddmNNmdNdy                         
+                     smMNNNmmmmmmmmmmmmmmmmmmmmNNmmm+mmmmmmmmmmmmmmdddmNNdy                         
+                   --hMNNNmmmmmmmmmmmmmmmmmmmmmmmmmdommmmmmmmmmmmmmmmmddmNd.                        
+                   ddMNNNmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddmd+/                      
+                   dNNNNmmmmmmmmmmmmmmmmmmmmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmddmNh                      
+                   dMNNNmmmmmmmmNmmmmmmmmmmmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmmddNd                      
+                   dNNNmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddmm      
+-->
+
+</head>
+<body>
+<!--============================
+              Banner/Nav
+   ============================-->
+    <section style="background: rgba(0,0,0, .5);" id="banner" data-parallax="scroll" data-image-src="img/books.JPG">
+        <div class="wrapper">
+            <header>
+               <div class="col-xs-6">
+                <p id="logo">JM</p>
+                <img class="blink " src="img/blinkz.png" alt="|" style="display: block;">
+                </div>
+                <!--     Nav      -->
+                <nav>
+                    <a class="hvr-underline-from-left" href="index.html">Home</a>
+                    <a class="hvr-underline-from-left" href="#">Projects</a>
+                    <a class="hvr-underline-from-left" href="#">Tutorials</a>
+                    <a class="hvr-underline-from-left" href="#">Books</a>
+                    <a class="hvr-underline-from-left" href="#services">Contact</a>
+                    <a class="hvr-underline-from-left" href="#">More</a>
+                </nav>
+                <!--     /Nav      -->
+            </header>
+            <div class="banner_content content">
+              <h1 class="title title_2">Books</h1><img class="blink " src="img/blinkz.png" alt="|">
+              <h2 class="sub_title sub_title_2">A <span>tour</span> of my <span>bookshelf</span>.</h2>
+              <div class="button_wrapper">
+                  <a href="#services" class="button button_2">See More</a>
+              </div>
+              <a href="#our_work">
+              <img src="img/arrow.png" id="arrow" class="container animated bounce">
+              </a>
+            </div>
+        </div>
+    </section>
+
+<!--  Services Content  -->
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="projects_content">
+
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">After visiting many other people's websites (for example: <a target="_blank" href="https://patrickcollison.com/bookshelf"><span>Patrick Collison's Bookshelf</span></a>) and seeing webpages on bookshelves, I decided to create my own version here and share with you some of the books on my <span>bookshelf.</span></p>
+
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">I currently haven't <span>read</span> all of these books but I'm sure I will have in the near <span>future</span>. You can scroll to the <span>bottom</span> of the list to see my <span>top 10 favourite books.</span></p>
+
+                <hr>
+
+
+                <!-- Elon Musk  -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Elon-Musk-SpaceX-Fantastic-Future-ebook/dp/B00KVI76ZS"><span>Elon Musk:</span></a> Tesla, SpaceX, and the Quest for a Fantastic Future</p>
+                <img src="img/elonmuskbook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s"> 
+                
+                <!-- Shoe Dog  -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Shoe-Dog-Memoir-Creator-NIKE/dp/1471146715/ref=sr_1_2?ie=UTF8&qid=1514663019&sr=8-2&keywords=shoe+dog"><span>Shoe Dog:</span></a> A Memoir by the Creator of NIKE</p>
+
+                <!-- The Everything Store -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Everything-Store-Jeff-Bezos-Amazon/dp/0552167835/ref=sr_1_1?s=books&ie=UTF8&qid=1514669377&sr=1-1&keywords=the+everything+store"><span>The Everything Store:</span></a> Jeff Bezos and the Age of Amazon</p>
+                
+                <!-- The Airbnb Story -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Airbnb-Story-Disrupted-Industry-Billions/dp/0753545586/ref=sr_1_1?s=books&ie=UTF8&qid=1514673493&sr=1-1&keywords=the+airbnb+story"><span>The Airbnb Story:</span></a>  How Three Guys Disrupted an Industry, Made Billions of Dollars … and Plenty of Enemies</p>
+
+                <!-- The Facebook Effect -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Facebook-Effect-Zuckerberg-Fastest-Growing/dp/0753522756/ref=sr_1_1?s=books&ie=UTF8&qid=1514670441&sr=1-1&keywords=the+facebook+effect"><span>The Facebook Effect:</span></a> The Real Inside Story of Mark Zuckerberg and the World's Fastest Growing Company</p>
+
+                <!-- The Accidental Billionaires -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Accidental-Billionaires-Betrayal-Founding-Facebook/dp/0099551233/ref=sr_1_2?s=books&ie=UTF8&qid=1514670591&sr=1-2&keywords=the+accidental+billionaires"><span>The Accidental Billionaires:</span></a> Sex, Money, Betrayal and the Founding of Facebook</p>
+
+                <!-- Hatching Twitter -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Hatching-Twitter-Nick-Bilton/dp/1444761978/ref=sr_1_sc_1?s=books&ie=UTF8&qid=1514670962&sr=1-1-spell&keywords=hatching+twiiter"><span>Hatching Twitter</span></a></p>
+                
+                <!-- Steve Jobs  -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Steve-Jobs-Exclusive-Walter-Isaacson/dp/034914043X/ref=sr_1_1?s=books&ie=UTF8&qid=1514671330&sr=1-1&keywords=steve+jobs"><span>Steve Jobs:</span></a> The Exclusive Biography</p>
+                <img src="img/jobsbook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s">
+
+                <!-- Becoming Steve Jobs -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Becoming-Steve-Jobs-evolution-visionary/dp/1444761994/ref=sr_1_2?s=books&ie=UTF8&qid=1514671474&sr=1-2&keywords=becoming+steve+jobs"><span>Becoming Steve Jobs:</span></a> The evolution of a reckless upstart into a visionary leader</p>
+
+                <!-- You Only Have To Be Right Once-->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/You-Only-Have-Right-Once/dp/0241246989/ref=sr_1_1?s=books&ie=UTF8&qid=1514672145&sr=1-1&keywords=you+only+have+to+be+right+one"><span>You Only Have To Be Right Once:</span></a> The Rise of the Instant Billionaires Behind Spotify, Airbnb, WhatsApp, and 13 Other Amazing Startups</p>
+
+                <!-- Good To Great -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Good-Great-Jim-Collins/dp/0712676090/ref=sr_1_1?s=books&ie=UTF8&qid=1514672216&sr=1-1&keywords=good+to+great"><span>Good To Great</span></a></p>
+
+                <!-- The Innovator's Dilemma -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Innovators-Dilemma-Technologies-Management-Innovation/dp/1633691780/ref=sr_1_1?s=books&ie=UTF8&qid=1514672354&sr=1-1&keywords=the+innovators+dilemma"><span>The Innovator's Dilemma:</span></a> When New Technologies Cause Great Firms to Fail (Management of Innovation and Change)</p>
+                <img src="img/innovatorsdilemabook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s">
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Crush-Time-Cash-Your-Passion/dp/0062295020/ref=sr_1_1?s=books&ie=UTF8&qid=1514673876&sr=1-1&keywords=crush+it"><span>Crush It!:</span></a> Why NOW Is the Time to Cash In on Your Passion</p>
+
+                <!-- The Art of Startup Fundraising -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Art-Startup-Fundraising-Negotiating-Entrepreneurs/dp/1119191831/ref=sr_1_fkmr0_2?s=books&ie=UTF8&qid=1514674045&sr=1-2-fkmr0&keywords=the+art+of+startup+fundraising"><span>The Art of Startup Fundraising:</span></a> Pitching Investors, Negotiating the Deal, and Everything Else Entrepreneurs Need to Know</p>
+
+                <!-- How to Win Friends and Influence People -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/How-Win-Friends-Influence-People/dp/0091906814/ref=sr_1_1?s=books&ie=UTF8&qid=1514674181&sr=1-1&keywords=how+to+win+friends+and+influence+people"><span>How to Win Friends and Influence People</span></a></p>
+
+                <!-- The Hard Thing About Hard Things -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Hard-Thing-About-Things-Building/dp/0062273205/ref=sr_1_1?s=books&ie=UTF8&qid=1514674640&sr=1-1&keywords=the+hard+thing+about+hard+things"><span>The Hard Thing About Hard Things:</span></a> Building a Business When There Are No Easy Answers</p>
+
+                <!-- Tools of Titans -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Tools-Titans-Billionaires-World-Class-Performers/dp/1785041274/ref=sr_1_1?s=books&ie=UTF8&qid=1514674998&sr=1-1&keywords=tools+of+titans"><span>Tools of Titans:</span></a> The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers</p>
+
+                <!-- Tribe of Mentors -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Tribe-Mentors-Short-Advice-World/dp/1785041851/ref=sr_1_1?s=books&ie=UTF8&qid=1514675327&sr=1-1&keywords=tribe+of+mentors"><span>Tribe of Mentors:</span></a> Short Life Advice from the Best in the World</p>
+                <img src="img/tribeofmentorsbook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s">
+
+                <!-- Start With Why -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Start-Why-Leaders-Inspire-Everyone/dp/0241958229/ref=sr_1_1?s=books&ie=UTF8&qid=1514675884&sr=1-1&keywords=start+with+why"><span>Start With Why:</span></a> How Great Leaders Inspire Everyone To Take Action</p>
+
+                <!-- Think and Grow Rich -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Think-Grow-Rich-Napoleon-Hill/dp/1934451355/ref=sr_1_1?s=books&ie=UTF8&qid=1514675974&sr=1-1&keywords=think+and+grow+rich+napoleon+hill"><span>Think and Grow Rich</span></a></p>
+
+                <!-- Zero to One: -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Zero-One-Notes-Start-Future/dp/0753555204/ref=sr_1_3?s=books&ie=UTF8&qid=1514676035&sr=1-3&keywords=zero+to+one/"><span>Zero to One:</span></a> Notes on Start Ups, or How to Build the Future</p>
+
+                <!-- How Google Works -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/How-Google-Works-Eric-Schmidt/dp/1444792490/ref=sr_1_1?s=books&ie=UTF8&qid=1514676181&sr=1-1&keywords=how+google+works"><span>How Google Works</span></a></p>
+
+                <!-- The Self-Made Billionaire Effect -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Self-Made-Billionaire-Effect-Producers-2016-06-02/dp/B01HC0W0BC/ref=sr_1_1?s=books&ie=UTF8&qid=1514676275&sr=1-1&keywords=the+self+made+billionaire+effect"><span>The Self-Made Billionaire Effect:</span></a> How Extreme Producers Create Massive Value</p>
+
+                <!-- The Art of War-->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Art-War-Sun-Tzu/dp/0981162614/ref=sr_1_1?s=books&ie=UTF8&qid=1514676479&sr=1-1&keywords=the+art+of+war"><span>The Art of War</span></a></p>
+                <img src="img/artofwarbook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s">
+
+                <!-- The Lean Startup -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Lean-Startup-Innovation-Successful-Businesses/dp/0670921602/ref=sr_1_1?s=books&ie=UTF8&qid=1514676780&sr=1-1&keywords=the+lean+startup"><span>The Lean Startup:</span></a> How Constant Innovation Creates Radically Successful Businesses</p>
+
+                <!-- The Ten-Day MBA -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Ten-Day-MBA-Steven-Silbiger-1993-09-05/dp/B01MXJ7C9O/ref=sr_1_1?s=books&ie=UTF8&qid=1514676916&sr=1-1&keywords=the+10+day+mba"><span>The Ten-Day MBA</span></a></p>
+
+                <!-- Jack Ma, Alibaba and the 40 Thieves of Success -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Entrepreneur-Jack-Alibaba-Thieves-Success/dp/1549848151/ref=sr_1_3?s=books&ie=UTF8&qid=1514677094&sr=1-3&keywords=jack+ma+book"><span>Jack Ma, Alibaba and the 40 Thieves of Success</span></a></p>
+
+                <!-- Bill Gates -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Bill-Gates-Life-Business-Lessons/dp/1537736493/ref=sr_1_3?s=books&ie=UTF8&qid=1514677171&sr=1-3&keywords=bill+gates+book"><span>Bill Gates:</span></a> The Life and Business Lessons of Bill Gates</p>
+
+                <!-- Warren Buffett -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Warren-Buffett-Life-Business-Lessons/dp/1537757350/ref=pd_sim_14_7?_encoding=UTF8&psc=1&refRID=W7DMN592JVQB934JW0A8"><span>Warren Buffett:</span></a> The Life and Business Lessons of Warren Buffett</p>
+
+                <!-- Awaken The Giant Within -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Awaken-Giant-Within-Immediate-Emotional/dp/0743409388/ref=sr_1_1?s=books&ie=UTF8&qid=1514677808&sr=1-1&keywords=awaken+the+giant+within"><span>Awaken The Giant Within:</span></a> How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Life</p>
+
+                <!-- The Gene -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Gene-Intimate-History-Siddhartha-Mukherjee/dp/0099584573/ref=sr_1_1?s=books&ie=UTF8&qid=1514679316&sr=1-1&keywords=The+gene"><span>The Gene:</span></a> An Intimate History</p>
+                <img src="img/thegenebook.png" class="wow slideInLeft language_logo " data-wow-offset="25" data-wow-duration="1.5s">
+
+                <!-- Sapiens -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Sapiens-Humankind-Yuval-Noah-Harari/dp/0099590085/ref=sr_1_1?s=books&ie=UTF8&qid=1514679802&sr=1-1&keywords=sapiens"><span>Sapiens:</span></a> A Brief History of Humankind</p>
+
+                <!-- Homo Deus -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Homo-Deus-Brief-History-Tomorrow/dp/1784703931/ref=sr_1_1?s=books&ie=UTF8&qid=1514679909&sr=1-1&keywords=home+deus"><span>Homo Deus:</span></a> A Brief History of Tomorrow</p>
+
+                <!-- The Power of Habit -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240/ref=sr_1_1?s=books&ie=UTF8&qid=1514680710&sr=1-1&keywords=the+power+of+habit"><span>The Power of Habit:</span></a> Why We Do What We Do, and How to Change</p>
+
+                <!-- Are You Smart Enough to Work at Google? -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Are You Smart Enough to Work at Google?:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/Are-Smart-Enough-Work-Google/dp/1851689559/ref=sr_1_1?s=books&ie=UTF8&qid=1514682087&sr=1-1&keywords=are+you+smart+enough+to+work+at+google/"><span>Crush It!:</span></a> Fiendish Puzzles And Impossible Interview Questions From The World'S Top Companies</p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+                <!-- Crush It! -->
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="https://www.amazon.co.uk/"><span>Crush It!:</span></a> Why NOW </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <hr>
+
+                
+
+                <p align="center" class="wow slideInRight language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">If you're interested in the code for this web application you can find it on my GitHub page <a target="_blank" href="https://github.com/JudeMolloy/SavageMash"><span>here.</span></a></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+              Footer
+   ============================-->
+
+
+    <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="copyright-text">
+                            © Jude Molloy | 2017
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-xs-center">
+
+                        <!-- social-icons -->
+                        <div class="social-icons">
+                            <a href="#" title="Twitter">
+                                <i class="fa fa-twitter fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="Facebook">
+                                <i class="fa fa-facebook fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="LinkedIn">
+                                <i class="fa fa-linkedin fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="GitHub">
+                                <i class="fa fa-github fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="Email">
+                                <i class="fa fa-envelope-o  fa-lg hvr-grow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!--============================
+              JavaScript
+   ============================-->
+   <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax/parallax.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="/wp-content/themes/kappe/js/css3-animate-it.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+</body>
+</html>
