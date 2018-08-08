@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jude Molloy | GFM Calculator</title>
+
+    <!--============================
+              CSS
+   ============================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animations.css">
+    <!--[if lte IE 9]>
+      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+
+<!--
+
+                  `ooooooooooooossssoooooo++o++++++++//o`                        
+                                     .NmmmmNmmmmdNmddhhhhhdddmNNmddddddd++N`                        
+                                     .NmmmmNNNNmmhhhhhdhhhhhhhhhhdmmdddd++N`                        
+                                     .NmNNNNmmmdhhhhhhhhhhhhhhhhhhsydmmd++N`                        
+                                `````-MNNmmmmNmmhhhhhhhhhyhhhhhhhhdysshmy+N`                        
+                                ymdddNNmmmmmmmNmdhhhhhhhhhhyyhhhhhhhysssddM`                        
+                                hMmmNNmmmmmmmmmmmmddhhhhhhhhhyyyhhhhhysssdM`                        
+                                hMNNNmNmmmmmmmmmmmmmdddhhhhhhhhysdhhhyysssM`                        
+                             -somNmmmmNmmmmmmmmmmmmmmmmdddhhhhhhydhhhshsssM`                        
+                             /NNmmmNmmNmmmmmmmmmmmmmmmmmmmddhhhhhhhhhsysshM`                        
+                             /NMmmmmNmmmmmmmdddhyyyyhhddmmmddhhhhhhhyssshmM`                        
+                             /mNNmmmmmmmmmysoo+//::--::+os+:---:/+syssydhoN`                        
+                             /MNmmmmmmmmmy+++/-.........--.........:odmyooM`                        
+                             /Mmmmmmmmmmso++:........................odsssM`                        
+                             /NNmmmmmmmy+++/.........................`+myyM`                        
+                             /MNmmmmmmNo+++:..........................`omyM`                        
+                             /MmmmmmmmNo+++-..........................``ddM`                        
+                             /Nmmmmmmmms+++-...........................`+mm-                        
+                             /Nmmmmmmmoo+++:----.........-/-...........`-Mmy                        
+                             /Mmmmmmmm+++++syssoo+/--.....+/--.........`/myo                        
+                             /MmmmmmmNo+++smdhhhhyyyso++/+oo/-.........`hdyo                        
+                             /NNmmmmmmd+++ysooooosyyhhdddyo:/+/---://+//Nyyo                        
+                             /mNNmmmmmmyyhdddddddmmmmddhyso+oydmdddhhhyysmmy`                       
+                             /mmmhhdNNNmNmmmMMMMMMmo+//+sNdhdmNMMmo///+omysm-                       
+                             /Moso++odmhooymMMMMMMdo+//+sNmh/dMmydo+//+sNhmy`                       
+                             /N+syso++yo+++mNMMMM//MMMMMMMd:.yNdomMMMMMMNNho                        
+                             /Msoosss++++++yNMMMMMMMMMMMMmo..-mMMMMMMMMMNdy+                        
+                              sNs++oys++++++ymNMMMMMMMNNd+....:mNMMMMNNmN`                          
+                              sdmhooos+s+++::/shddddhys+:--.``.+ossss+:Nm`                          
+                              sdhNNhso+h++/....--------s+ddo:/ydy/.....NN`                          
+                              /soysysyNNs++-....-/:...-+ooo++//:-.....smm`                          
+                                     .Nmmo+/-....-/:....-----........omym`                          
+                                     .Ndmmo++:-...:++/:::::/:-......odyym`                          
+                                     .NddNyso++:-..:ooo//++-.......shsssd`                          
+                                     .Nddmmoosso+:-.--://:-......:hyooood`                          
+                                     .NdddNy++ossso/--.........:shsoooood`                          
+                                     .NddNNNo/-:/osso+/:---../sdhooooooos/+                         
+                                     .NmNNNNh/...-/+oosooshhhdmdyoooooooooy                         
+                     +ssssyyyyyyyyyyyhMMNNNdso.....-:++oosNddyhhyossyyyhdhy                         
+                     sdhhhNNmmmNmNNNNNNNNNNNso:......-:/+dmmyyyydhdhddddNdy                         
+                     sdhhhNNmNNNNNNNNNNNNNNNNho:........-ymNmddddhdhddddNdy                         
+                     sdhhhNNNNNNNNNNNNNNNNNNmmmho/::::/+ymmmddNmmddhddddNdy                         
+                     sdhhmMNNNNNmmmmmmmmmmNNNNmmmhs/.+hmmmmmdshdmmmdddddNdy                         
+                     shhNNNNNmmmmmmmmmmmmmmmNNNNmmmmymmmmmmmmddddddmNNmdNdy                         
+                     smMNNNmmmmmmmmmmmmmmmmmmmmNNmmm+mmmmmmmmmmmmmmdddmNNdy                         
+                   --hMNNNmmmmmmmmmmmmmmmmmmmmmmmmmdommmmmmmmmmmmmmmmmddmNd.                        
+                   ddMNNNmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddmd+/                      
+                   dNNNNmmmmmmmmmmmmmmmmmmmmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmddmNh                      
+                   dMNNNmmmmmmmmNmmmmmmmmmmmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmmddNd                      
+                   dNNNmmmmmmmmmNmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddmm      
+-->
+
+</head>
+<body>
+<!--============================
+              Banner/Nav
+   ============================-->
+    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/chemistry.jpg">
+        <div class="wrapper">
+            <header>
+               <div class="col-xs-6">
+                <p id="logo">JM</p>
+                <img class="blink " src="img/blinkz.png" alt="|" style="display: block;">
+                </div>
+                <!--     Nav      -->
+                <nav>
+                    <a class="hvr-underline-from-left" href="index.html">Home</a>
+                    <a class="hvr-underline-from-left" href="#">Projects</a>
+                    <a class="hvr-underline-from-left" href="#">Tutorials</a>
+                    <a class="hvr-underline-from-left" href="books.html">Books</a>
+                    <a class="hvr-underline-from-left" href="#services">Contact</a>
+                    <a class="hvr-underline-from-left" href="#">More</a>
+                </nav>
+                <!--     /Nav      -->
+            </header>
+            <div class="banner_content content">
+              <h1 class="title title_2">Chemistry GFM Calculator</h1><img class="blink " src="img/blinkz.png" alt="|">
+              <h2 class="sub_title sub_title_2">An <span>easy</span> way to calculate the GFM of <span>molecules</span>.</h2>
+              <div class="button_wrapper">
+                  <a href="#services" class="button button_2">See More</a>
+              </div>
+              <a href="#our_work">
+              <img src="img/arrow.png" id="arrow" class="container animated bounce">
+              </a>
+            </div>
+        </div>
+    </section>
+
+<!--  Services Content  -->
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="projects_content">
+                
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This app makes it <span>easy</span> to calculate the GFM (Gram Formula Mass) of <span>molecules</span> to be used in Chemistry calculations. I built this app very quickly - in about <span>30 minutes</span> - while I was doing Chemistry homework and was frustrated with the <span>monotonous</span> task of looking up every the GFM for <span>each</span> element and entering it into my calculator.</p>
+                <img style="padding-top: 0px;" src="img/gfmplain.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <hr>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This app <span>definitely</span> was worth building and I still think about the time that I could have saved had I just built it <span>earlier</span>. It has a basic user interface although I wasn't too bothered with how it looked. The app only contains <span>25</span> elements, however, this is sufficient for <span>99%</span> of every Scottish Higher and National 5 Chemistry question, so leaving out the other elements <span>greatly</span> reduced the time needed for implementation.</p>
+                <img style="padding-top: 0px;" src="img/gfmstuff.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+                </a>
+                <hr>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><span>Yes</span>, I know. I could have just opted for using a GFM calculator website, but what's the <span>fun</span> in that?</p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+              Footer
+   ============================-->
+
+
+    <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="copyright-text">
+                            © Jude Molloy | 2018
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-xs-center">
+
+                        <!-- social-icons -->
+                        <div class="social-icons">
+                            <a href="#" title="Twitter">
+                                <i class="fa fa-twitter fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="Facebook">
+                                <i class="fa fa-facebook fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="LinkedIn">
+                                <i class="fa fa-linkedin fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="GitHub">
+                                <i class="fa fa-github fa-lg hvr-grow"></i>
+                            </a>
+                            <a href="#" title="Email">
+                                <i class="fa fa-envelope-o  fa-lg hvr-grow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!--============================
+              JavaScript
+   ============================-->
+   <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax/parallax.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="/wp-content/themes/kappe/js/css3-animate-it.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+</body>
+</html>

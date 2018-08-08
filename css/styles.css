@@ -173,6 +173,11 @@ a:visited{
             Our Work
 ======================================*/
 
+.portfolio_text {
+    color: #373a3c;
+    text-align: center;
+}
+
 #our_work{
     background-color: #F8FAFF;
 }
