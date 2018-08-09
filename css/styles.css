@@ -269,6 +269,11 @@ title_2{
 .language_text span {
     color: #3ac569;
 }
+
+.equation span {
+    color: #373a3c;
+}
+
 .ios-app {
   max-width: 25%;
   height: auto;

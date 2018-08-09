@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jude Molloy | Home</title>
+    <title>Jude Molloy | iOS Calculator</title>
 
     <!--============================
               CSS
@@ -38,8 +38,8 @@
       <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
 
-
 <!--
+
                   `ooooooooooooossssoooooo++o++++++++//o`                        
                                      .NmmmmNmmmmdNmddhhhhhdddmNNmddddddd++N`                        
                                      .NmmmmNNNNmmhhhhhdhhhhhhhhhhdmmdddd++N`                        
@@ -97,7 +97,7 @@
 <!--============================
               Banner/Nav
    ============================-->
-    <section id="banner" data-parallax="scroll" data-image-src="img/programming.png">
+    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/xcodeperspective.png">
         <div class="wrapper">
             <header>
                <div class="col-xs-6">
@@ -113,10 +113,10 @@
                 <!--     /Nav      -->
             </header>
             <div class="banner_content content">
-              <h1 class="title title_2">Jude Molloy</h1><img class="blink " src="img/blinkz.png" alt="|">
-              <h2 class="sub_title sub_title_2">I need to figure out what to say here.</h2>
+              <h1 class="title title_2">iOS Calculator</h1><img class="blink " src="img/blinkz.png" alt="|">
+              <h2 class="sub_title sub_title_2">A <span>Simple</span> iOS Calculator App.</h2>
               <div class="button_wrapper">
-                  <a href="#our_work" class="button button_2">See More</a>
+                  <a href="#services" class="button button_2">See More</a>
               </div>
               <a href="#our_work">
               <img src="img/arrow.png" id="arrow" class="container animated bounce">
@@ -124,105 +124,51 @@
             </div>
         </div>
     </section>
-    <!--============================
-              Our Work
-   ============================-->
-    <section id="our_work">
-        <div class="wrapper">
-           <div class="content animatedParent" data-appear-top-offset='-300'>
-                <h1 class="title">Recent Projects</h1>
-                <h2 class="sub_title">Take a look at some of my most recent projects.</h2>
-                <hr>
-                <!--       Portfolio 1             -->
-                <div class="row">
-                  <div class="col-xs-12  col-lg-4 work">
-                  <a href="savagemash.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/finddesigners.png" alt="Card image cap" data-wow-offset="25" data-wow-duration="1.5s"></a>
-                </div>
-                <!--       Portfolio 2             -->
-                  <div class="col-xs-12 col-lg-4 animated">
-                  <a href="22ndcolour.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/22ndcolour.png" alt="Card image cap" data-wow-offset="25" data-wow-duration="1.5s"></a>
-                </div>
-                <!--       Portfolio 3             -->
-                  <div class="col-xs-12  col-lg-4 animated">
-                  <a href="savagemash.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/savagemash.png" alt="Card image cap" data-wow-offset="25" data-wow-duration="1.5s"></a>
-                </div>
-               </div>
-                <hr>
-            </div>
-        </div>
-    </section>
-  <!--============================
-              Services
-   ============================-->
-  <section id="services_banner" data-parallax="scroll" data-image-src="img/code.jpg">
-      <div class="wrapper">
-             <div class="content">
-              <h1 class="title">Which <span class="green_text">Languages</span> Do I Use?</h1>
-      </div>
-  </section>
+
 <!--  Services Content  -->
 
     <section id="services">
         <div class="wrapper">
             <div class="projects_content">
+              
+              <div class="content" style="padding-top: 0rem;">
+                <h1 class="title">Time Complexity and Big-O Notation</h1>
+              </div>
 
-                <img src="img/python-logo.svg" class="wow zoomInDown language_logo" data-wow-offset="25" data-wow-duration="1.5s">
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Python is my <span>main</span> multi-purpose programming language. I use it for <span>nearly</span> everything from programming challenges to the odd machine learning algorithm.</p>
-                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Python Programming Snippet</b></p>
-                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/ff1bf5fa0a7eb88b7aeb15b4d7188da1.js"></script></div>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">How <span>long</span> does it take to sort 10 numbers into ascending order? What if we have 20 numbers? Or perhaps <span>1337</span> numbers? <span>Time complexity</span> is an important aspect of computer science as it allows us to analyse different algorithms to see how much time it will take as the size of the input <span>grows</span>. Faster solutions are desirable as they require less computational power and can save money for companies, especially when working with large data sets. </p>
+                <img style="padding-top: 0px;" src="img/ioscalculatr.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <hr>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Time complexity can be <span>expressed</span> as 𝕋(n) which describes the time that an algorithm will take when run on an input of size n. <span>Obviously</span> it doesn’t take as long to sort a list of numbers that are nearly sorted compared to a list of numbers that are all over the place. Time complexity focuses on the <span>worst case</span> scenario - which in a list of numbers would be that they are in reverse order and require the <span>maximum</span> amount of operations to sort them - as this means that it’s guaranteed that it will not take longer than this for any input.</p>
+
+              <div class="content" style="padding-top: 1rem; padding-bottom: 1rem;">
+                <h1 class="title" style="font-size: 2rem;">Analysing an Algorithm's Time Complexity</h1>
+              </div>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">To <span>analyse</span> an algorithm's time complexity we need to look at the number of <span>operations</span> that must be performed for an input of size n. A simple example of this would be to analyse the time complexity of <span>selection</span> sort which is a basic sorting algorithm.</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">The code below is written in <span>pseudocode</span>.</p>
+                <img style="padding-top: 0px;" src="img/selection.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Considering the worst case scenario the outer FOR loop is executed <span>n - 1 times</span> and performs <span>2 operations</span> - the first assignment and the swap - giving us <span>2n - 2</span>, as 2(n-1) = 2n - 2. We must also consider the inner loop which initially runs n - 1 times, then n - 2 times and so on. This sequence can be expressed <span>mathematically</span> as:</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[Inner Loop = n-1 + n-2 + n-3 + ... + 2 + 1\]</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[=\sum_{i=1}^{n-1} i = \frac{(n-1)(n)}{2} = \frac{n^{2}-n}{2}\]</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">The summation above was simplified using: </p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[S=\sum_{i=1}^{n} i = \frac{n(n+1)}{2}\]</p>
+
+                <img style="padding-top: 0px;" src="img/xcode1.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+                </a>
                 <hr>
 
-                <img src="img/django.png" class="wow zoomInDown django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Django is a Python <span>Framework</span> that I use to build <span>web applications</span> and write server-side Python.</p>
-                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Django Code Snippet</b></p>
-                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/c4abae4363b358bc2e37f2b3f4774369.js"></script></div>
-                <hr>
-
-                <img src="img/swift.png" class="wow zoomInDown swift_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Swift is <span>Apple's</span> latest programming language. I use it to build <span>iOS</span> applications for the <span>iPhone</span> and <span>iPad.</span></p>
-                <p class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Swift Programming Snippet</b></p>
-                <div class="wow zoomInUp code-snippet" data-wow-offset="25" data-wow-duration="1.5s"><script src="https://gist.github.com/JudeMolloy/c4abae4363b358bc2e37f2b3f4774369.js"></script></div>
-                <p align="center" class="wow zoomInUp" data-wow-offset="25" data-wow-duration="1.5s"><b>Xcode iOS Development Environment</b></p>
-                <img src="img/xcode.png" class="wow zoomInDown xcode language_logo" data-wow-offset="25" data-wow-duration="1.5s">
-                <hr>
-
-                <p align="center" class="wow zoomInDown language_text text-center container" style="font-size: 3rem;" data-wow-offset="25" data-wow-duration="1.5s">And <span>many</span> more. But these are my <span>favourite</span>.</p>
-
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This calculator was probably the first <span>reasonably</span> complex iOS application that I built and it paved the way for <span>future</span> apps.</p>
+                
                 </div>
             </div>
         </div>
-        <div class="languages">
-        <h1 class="title hvr-grow text-xs-center">Contact</h1>
-        </div>
-        <div class="languages">
-          <div class="container">
-            <form name="contactform" method="post" action="send_form_email.php">
-
-                  <div class="form-group">
-                    <label for="first_name">First Name</label>
-                    <input class="form-control" type="text" name="first_name" maxlength="50" size="30" placeholder="First Name"> 
-                  </div>
-
-                  <div class="form-group .has-success">
-                    <label for="exampleInputPassword1">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" maxlength="50" size="30" placeholder="Last Name">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input class="form-control" type="text" name="email" maxlength="80" size="30" placeholder="Email Address"> 
-                  </div>
-
-                  <div class="form-group">
-                    <label for="comments">Message</label>
-                    <textarea class="form-control" name="comments" maxlength="1000" cols="25" rows="6" placeholder="Enter Your Message"></textarea> 
-                  </div>
-
-                  <input type="submit" value="Submit" class="button"></input>
-                  </form>
-          </div>
-        </div>
-
     </section>
     <!--============================
               Footer
@@ -254,7 +200,7 @@
                                 <i class="fa fa-github fa-lg hvr-grow"></i>
                             </a>
                             <a href="#" title="Email">
-                                <i class="fa fa-envelope-o fa-lg hvr-grow"></i>
+                                <i class="fa fa-envelope-o  fa-lg hvr-grow"></i>
                             </a>
                         </div>
                     </div>
@@ -269,6 +215,7 @@
               <script>
               new WOW().init();
               </script>
+    <script type="text/javascript" src="http://www.hostmath.com/Math/MathJax.js?config=OK"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
