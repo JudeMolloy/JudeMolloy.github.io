@@ -97,7 +97,7 @@
 <!--============================
               Banner/Nav
    ============================-->
-    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/xcodepp.png">
+    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/maths.png">
         <div class="wrapper">
             <header>
                <div class="col-xs-6">
@@ -113,8 +113,8 @@
                 <!--     /Nav      -->
             </header>
             <div class="banner_content content">
-              <h1 class="title title_2">iOS Calculator</h1><img class="blink " src="img/blinkz.png" alt="|">
-              <h2 class="sub_title sub_title_2">A <span>Simple</span> iOS Calculator App.</h2>
+              <h1 class="title title_2">Time Complexity and Big-O Notation</h1><img class="blink " src="img/blinkz.png" alt="|">
+              <h2 class="sub_title sub_title_2">Analysing <span>Algorithms</span>.</h2>
               <div class="button_wrapper">
                   <a href="#services" class="button button_2">See More</a>
               </div>
@@ -136,13 +136,13 @@
               </div>
 
                 <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">How <span>long</span> does it take to sort 10 numbers into ascending order? What if we have 20 numbers? Or perhaps <span>1337</span> numbers? <span>Time complexity</span> is an important aspect of computer science as it allows us to analyse different algorithms to see how much time it will take as the size of the input <span>grows</span>. Faster solutions are desirable as they require less computational power and can save money for companies, especially when working with large data sets. </p>
-                <img style="padding-top: 0px;" src="img/ioscalculatr.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
 
-                <hr>
                 <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Time complexity can be <span>expressed</span> as 𝕋(n) which describes the time that an algorithm will take when run on an input of size n. <span>Obviously</span> it doesn’t take as long to sort a list of numbers that are nearly sorted compared to a list of numbers that are all over the place. Time complexity focuses on the <span>worst case</span> scenario - which in a list of numbers would be that they are in reverse order and require the <span>maximum</span> amount of operations to sort them - as this means that it’s guaranteed that it will not take longer than this for any input.</p>
 
+                <hr>
+
               <div class="content" style="padding-top: 1rem; padding-bottom: 1rem;">
-                <h1 class="title" style="font-size: 2rem;">Analysing an Algorithm's Time Complexity</h1>
+                <h1 class="title wow zoomInDown" style="font-size: 2rem;">Analysing an Algorithm's Time Complexity</h1>
               </div>
 
                 <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">To <span>analyse</span> an algorithm's time complexity we need to look at the number of <span>operations</span> that must be performed for an input of size n. A simple example of this would be to analyse the time complexity of <span>selection</span> sort which is a basic sorting algorithm.</p>
@@ -154,6 +154,7 @@
 
                 <img style="padding-top: 0px;" src="img/summation.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
 
+                <!-- THE ACTUAL LaTeX MATHEMATICS
                 <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[Inner Loop = n-1 + n-2 + n-3 + ... + 2 + 1\]</p>
 
                 <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[=\sum_{i=1}^{n-1} i = \frac{(n-1)(n)}{2} = \frac{n^{2}-n}{2}\]</p>
@@ -162,11 +163,17 @@
 
                 <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[S=\sum_{i=1}^{n} i = \frac{n(n+1)}{2}\]</p>
 
-                <img style="padding-top: 0px;" src="img/xcode1.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+              -->
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This summation must be <span>multiplied</span> by 2 as in the worst case scenario the IF statement is <span>always</span> met and one comparison is executed as is one assignment. This gives us n<sup>2</sup> - n operations which must be <span>added</span> to the 2n - 2 operations from the outer loop.</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Thus, we get:</p>
+
+                <img style="padding-top: 0px;" src="img/tc.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
                 </a>
                 <hr>
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This calculator was probably the first <span>reasonably</span> complex iOS application that I built and it paved the way for <span>future</span> apps.</p>
+                
                 
                 </div>
             </div>
