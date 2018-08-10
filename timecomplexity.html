@@ -152,6 +152,8 @@
 
                 <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Considering the worst case scenario the outer FOR loop is executed <span>n - 1 times</span> and performs <span>2 operations</span> - the first assignment and the swap - giving us <span>2n - 2</span>, as 2(n-1) = 2n - 2. We must also consider the inner loop which initially runs n - 1 times, then n - 2 times and so on. This sequence can be expressed <span>mathematically</span> as:</p>
 
+                <img style="padding-top: 0px;" src="img/summation.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
                 <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[Inner Loop = n-1 + n-2 + n-3 + ... + 2 + 1\]</p>
 
                 <p align="center" class="wow zoomInDown language_text text-center container equation" data-wow-offset="25" data-wow-duration="1.5s">\[=\sum_{i=1}^{n-1} i = \frac{(n-1)(n)}{2} = \frac{n^{2}-n}{2}\]</p>
