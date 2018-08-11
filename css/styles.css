@@ -270,6 +270,17 @@ title_2{
     color: #3ac569;
 }
 
+.language_text span a:link {
+    color: #3ac569;
+}
+
+.language_text span a:hover {
+    color: #88dda4;
+}
+
+.language_text span a:visited {
+    color: #3ac569;
+}
 .equation span {
     color: #373a3c;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jude Molloy | iOS Calculator</title>
+    <title>Jude Molloy | Time Complexity and Big-O Notation</title>
 
     <!--============================
               CSS
@@ -167,9 +167,37 @@
 
                 <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This summation must be <span>multiplied</span> by 2 as in the worst case scenario the IF statement is <span>always</span> met and one comparison is executed as is one assignment. This gives us n<sup>2</sup> - n operations which must be <span>added</span> to the 2n - 2 operations from the outer loop.</p>
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Thus, we get:</p>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Thus, we can form the equation:</p>
 
                 <img style="padding-top: 0px;" src="img/tc.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">As we can see, this equation for the Time Complexity is a <span>quadratic</span>. To see how the time increases as the size of the input grows we can just consider the <span>dominant term</span> as it the only term that really matters - the other terms start to become less relevant. We can now <span>approximate</span> Time Complexity as:</p>
+
+                <img style="padding-top: 0px;" src="img/approx.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">If we look at another sorting algorithm with, for example, time complexity:</p>
+
+                <img style="padding-top: 0px;" src="img/tc comparison.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+                
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">It may seem that this algorithm is much more efficient and if we look at it <span>microscopically</span>, we can see from the graph below that it looks like it is.</p>
+
+                <img style="padding-top: 0px;" src="img/microscopic.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">If we consider the graphs as the input size becomes very large and look <span>macroscopically</span> (see the graph below) we can actually see that the two graphs <span>eventually</span> look similar and this is why we can
+                <span>ignore</span> constants and only consider the dominant term.</p>
+
+                <img style="padding-top: 0px;" src="img/macroscopic.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">This is pretty much the basis of <span>Big-O</span> notation which just focuses on the <span>fastest growing term</span>. For example the selection sort algorithm and the other example algorithm would be:</p>
+                
+                <img style="padding-top: 0px;" src="img/bigo.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">In the graph <span>below</span> I have plotted some of the <span>most common</span> Big-O running times: <span>exponential time</span> (2<sup>n</sup>), <span>quadratic time</span> (n<sup>2</sup>), <span>quasilinear time</span> (n log n), <span>linear time</span> (n), <span>logarithmic time</span> (log n) and <span>constant time</span> (1). There are other worse running times such as <span>factorial time</span> (n!) and <span>double exponential time</span> (2<sup>2<sup>n</sup></sup>).</p>
+
+                <img style="padding-top: 0px;" src="img/bigographs.png" class="wow zoomInUp django_logo language_logo left" data-wow-offset="200" data-wow-duration="1.5s">
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Big O is important as it allows us to <span>analyse algorithms</span> to see how they perform with large inputs. This was just a <span>basic</span> overview of Big-O notation, so if you want to read more on the topic you can <span><a href="https://en.wikipedia.org/wiki/Big_O_notation"><u>here</u></a></span>.</p>
+
                 </a>
                 <hr>
 
