@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jude Molloy | Savagemash</title>
+    <title>Jude Molloy | Konect</title>
 
     <!--============================
               CSS
@@ -97,7 +97,7 @@
 <!--============================
               Banner/Nav
    ============================-->
-    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/facebook.jpeg">
+    <section style="background: rgba(0,0,0, .65);" id="banner" data-parallax="scroll" data-image-src="img/konecthome.png">
         <div class="wrapper">
             <header>
                <div class="col-xs-6">
@@ -113,8 +113,8 @@
                 <!--     /Nav      -->
             </header>
             <div class="banner_content content">
-              <h1 class="title title_2">Savagemash</h1><img class="blink " src="img/blinkz.png" alt="|">
-              <h2 class="sub_title sub_title_2">A Reincarnation of <span>Mark Zuckerberg's</span> Facemash.</h2>
+              <h1 class="title title_2">Konect</h1><img class="blink " src="img/blinkz.png" alt="|">
+              <h2 class="sub_title sub_title_2">A <span>Networking</span> App that Uses QR Codes to <span>Exchange</span> Details.</h2>
               <div class="button_wrapper">
                   <a href="#services" class="button button_2">See More</a>
               </div>
@@ -131,34 +131,35 @@
         <div class="wrapper">
             <div class="projects_content">
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Inspired by <span>Facemash</span> - A site that Mark Zuckerberg, the <span> co-founder and CEO</span> of Facebook, created in 2003 from his dormitory in Kirkland House at <span>Harvard</span> to compare girls at his university - I built the website Savagemash in a couple of hours, which contains some <span>reasonably</span> embarrasing pictures of me and some of my friends and lets you vote on who is more of a savage, which honestly has no real meaning.</p>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><span>Konect</span> is a networking application, similar to a <span>business card</span>, that allows users to <span>exchange</span> details via QR code scanning. This project was definitely one of my more ambitious ideas and it <span>wasn’t</span> easy to implement. I decided to try and build Konect at first as I wanted to work with the QR code technology and combine it with <span>Firebase</span>.</p>
 
-                <hr>
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s"><a target="_blank" href="http://jeffemolloy.pythonanywhere.com/"><u><span>Visit the Savagemash website here.</span></u></p>
-                <img src="img/normalsavage.png" class="wow zoomInUp django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">  
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Each user has their own <span>profile</span> as shown below.</p>
+                <img src="img/konectprofile.png" class="wow zoomInUp django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s" style="padding-top: 0;">  
                 </a>
-                <hr>
-
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Watch the YouTube clip below, a scene from the movie <span>The Social Network</span> where Mark Zuckerberg codes the website.</p>
                 
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">The Konect app allows a user to <span>create</span> an account and add details about themselves. This data is then sent to the Firebase database and used to create the <span>content</span> for the application. Each user has a <span>unique</span> ID and a QR code is generated based on this unique ID. When another user scans a QR code it locates the user from the unique ID and creates a <span>connection</span> between the two users allowing them to view each others details.</p>
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Shown below is the current user's <span>Konnections</span> which they can use to browse their connections and the <span>inital</span> view which is launched when the app is opened up for the first time.</p>
+                <img src="img/konnectionsandstart.png" class="wow zoomInUp django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s" style="padding-top: 0;">  
+                </a>
+                 
+                 <hr>
                 <!-- 
                   Embedded Youtube Video
                 -->
-                <p align="center"><iframe class="wow zoomInUp" width="560" height="315" src="https://www.youtube.com/embed/f8AuB5hPiCk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen data-wow-offset="25" data-wow-duration="1.5s"></iframe></p>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">Watch the <span>video</span> below, displaying <span>some</span> of the main features of the <span>Konect</span> App.<p>
+                <p align="center"><iframe class="wow zoomInUp" width="560" height="315" src="https://www.youtube.com/embed/P3skARz8qjA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen data-wow-offset="25" data-wow-duration="1.5s"></iframe></p>
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">You can also read <span>The Crimson's</span> - the daily student newspaper of Harvard University - article from november 2003 on the real event. <a target="_blank" href="http://www.thecrimson.com/article/2003/11/19/facemash-creator-survives-ad-board-the/"><span>Click Here.</span></a></p>
+                <hr>              
+
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">The code for this application is available on GitHub. <a href="https://github.com/JudeMolloy/konectApp" target="_blank"><span>Click Here.</span></a></p>
+
+                <img src="img/createaccount.png" class="wow zoomInUp django_logo language_logo" style="padding-top: 0;" data-wow-offset="25" data-wow-duration="1.5s">
                 <hr>
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">I mainly created the website for fun as I was interested in the rating system - the elo rating system(<a target="_blank" href="https://en.wikipedia.org/wiki/Elo_rating_system"><span>Learn More</span></a>) - which is commonly used to rate chess players.</p>
-
-                <img src="img/elo.gif" class="wow zoomInUp django_logo language_logo" data-wow-offset="25" data-wow-duration="1.5s">
                 <hr>
 
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">I built this website using the Python framework, <span>Django</span>. Overall this project wasn't particularly difficult, however, I was pleased with the similarity between <span>Facemash</span> and <span>Savagemash</span>.</p>
-
-                <hr>
-
-                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">By <span>Jude Molloy</span>: Last Edited 11/08/2018</p>
+                <p align="center" class="wow zoomInDown language_text text-center container" data-wow-offset="25" data-wow-duration="1.5s">By <span>Jude Molloy</span>: Last Edited 05/09/2018</p>
                 
 
                 </div>
