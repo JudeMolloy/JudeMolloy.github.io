@@ -96,6 +96,7 @@ a:visited{
 .content .title, .projects_content .title{
     font-size: 6rem;
     min-height: 6.5rem;
+    _height: 6.5rem;
 }
 .content .sub_title{
     font-weight: 400;
@@ -104,6 +105,7 @@ a:visited{
     padding: 0.5rem auto 2rem auto;
     margin: 0.5rem auto 2rem auto;
     min-height: 4.5rem;
+    _height: 4.5rem;
     line-height: 1.75;
 }
 #arrow{
