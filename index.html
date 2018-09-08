@@ -108,14 +108,14 @@
                 <!--     Nav      -->
                 <nav>
                     <a class="hvr-underline-from-left" href="index.html">Home</a>
-                    <a class="hvr-underline-from-left" href="books.html">Books</a>
-                    <a class="hvr-underline-from-left" href="#services">Contact</a>
+                    <!-- <a class="hvr-underline-from-left" href="">Books</a> -->
+                    <a class="hvr-underline-from-left" href="#contact">Contact</a>
                 </nav>
                 <!--     /Nav      -->
             </header>
             <div class="banner_content content">
-              <h1 class="title title_2">Jude Molloy</h1><img class="blink " src="img/blinkz.png" alt="|">
-              <h2 class="sub_title sub_title_2">I need to figure out what to say here.</h2>
+              <h1 class="title title_2"></h1>
+              <h2 class="sub_title sub_title_2"></h2>
               <div class="button_wrapper">
                   <a href="#our_work" class="button button_2">See More</a>
               </div>
@@ -135,17 +135,17 @@
                 <div class="row">
                   <div class="col-xs-12  col-lg-4 work">
                   <a href="timecomplexity.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/graphs.png" alt="Time Complexity and Big-O Notation" data-wow-offset="25" data-wow-duration="1.5s">
-                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Time Complexity and Big-O Notation</strong></h3></a></a>
+                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Time Complexity and Big-O Notation</strong></h3></a>
                 </div>
                 
                   <div class="col-xs-12 col-lg-4 animated">
-                  <a href="22ndcolour.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/qubit.png" alt="An Introduction to Quantum Computing" data-wow-offset="25" data-wow-duration="1.5s">
-                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>An Introduction to Quantum Computing</strong> </h3></a></a>
+                  <img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/qubit.png" alt="An Introduction to Quantum Computing" onmouseover="this.src='img/qccomingsoon.png';" onmouseout="this.src='img/qubit.png';" data-wow-offset="25" data-wow-duration="1.5s">
+                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>An Introduction to Quantum Computing</strong> </h3>
                 </div>
                 
                   <div class="col-xs-12  col-lg-4 animated">
-                  <a href="savagemash.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/savagemash.png" alt="How to Build a Simple Machine Learning Algorithm" data-wow-offset="25" data-wow-duration="1.5s">
-                  <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>How to Build a Simple Machine Learning Algorithm</strong></h3></a>
+                  <img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/simpleML.png" alt="How to Build a Simple Machine Learning Algorithm" onmouseover="this.src='img/simpleMLcomingsoon.png';" onmouseout="this.src='img/simpleML.png';"data-wow-offset="25" data-wow-duration="1.5s">
+                  <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>How to Build a Simple Machine Learning Algorithm</strong></h3>
                 </div>
                </div>
 
@@ -196,8 +196,8 @@
 
                <div class="row">
                 <div class="col-xs-12  col-lg-4 animated">
-                  <a href="gfm.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/gfm.png" alt="Chemistry GFM Calculator" data-wow-offset="25" data-wow-duration="1.5s">
-                  <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Image Recognition App:</strong> An Image Classifier App</h3></a>
+                  <img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/comingsoon.png" alt="Image Recognition App" data-wow-offset="25" data-wow-duration="1.5s">
+                  <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Image Recognition App:</strong> An Image Classifier App</h3>
                 </div>
                 
                 <div class="col-xs-12 col-lg-4 animated">
@@ -214,8 +214,8 @@
 
                <div class="row">
                 <div class="col-xs-12  col-lg-4 work">
-                  <a href="savagemash.html"><img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/judeai.png" alt="Jude AI" onmouseover="this.src='img/judecs.png';" onmouseout="this.src='img/judeai.png';" data-wow-offset="25" data-wow-duration="1.5s">
-                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Jude AI:</strong> An intelligent Facebook Messenger Bot</h3></a></a>
+                  <img class="wow zoomInDown portfolio card-img-top img-fluid hvr-grow" src="img/judeai.png" alt="Jude AI" onmouseover="this.src='img/judecs.png';" onmouseout="this.src='img/judeai.png';" data-wow-offset="25" data-wow-duration="1.5s">
+                    <h3 class="wow zoomInDown language_text text-center portfolio_text"><strong>Jude AI:</strong> An intelligent Facebook Messenger Bot</h3>
                 </div>
                 
                 <div class="col-xs-12  col-lg-4 work">
@@ -270,7 +270,7 @@
                 </div>
             </div>
         </div>
-        <div class="languages">
+        <div class="languages" id="contact">
         <h1 class="title hvr-grow text-xs-center">Contact</h1>
         </div>
         <div class="languages">
@@ -355,5 +355,32 @@
     <script src="js/css3-animate-it.js"></script>
     <script src="/wp-content/themes/kappe/js/css3-animate-it.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+
+    var options = {
+      strings: ["I like <span>Computer Science</span>", "I like ...^2000?", "I need to <span>figure</span> out what to say here."],
+      typeSpeed: 80,
+      backSpeed: 80,
+      smartBackspace: true,
+      startDelay: 800,
+      showCursor: false,
+      loop: true,
+      loopcount: Infinity,
+    };
+
+    var typed = new Typed(".sub_title", options);
+
+    var options = {
+      strings: ["Hello! ^2000", "Jude Molloy"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      startDelay: 800,
+      showCursor: false,
+    };
+
+    var typed = new Typed(".title", options);
+
+    </script>
 </body>
 </html>
